@@ -1,5 +1,23 @@
 from gym.envs.registration import registry, register, make, spec
 
+'''
+register(
+    id='OptTradeExecEnv-v0',
+    entry_point='gym.envs.my_collection:OptTradeExecEnv',
+)
+'''
+register(
+    id='GridWorld-v1',
+    entry_point='gym.envs.user:GridEnv1',
+    max_episode_steps=200,
+    reward_threshold=100.0,
+    )
+
+
+register(
+    id='OptTradeExec-v1',
+    entry_point='gym.envs.opt_trade_exec:OptTradeExecEnv',
+    )
 # Algorithmic
 # ----------------------------------------
 
